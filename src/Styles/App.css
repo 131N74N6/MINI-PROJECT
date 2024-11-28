@@ -1,0 +1,9 @@
+body[is-dark="no"] {
+    background-color: white;
+    transition: 0.4s;
+}
+
+body[is-dark="yes"] {
+    background-color: rgb(39,39,39);
+    transition: 0.4s;
+}

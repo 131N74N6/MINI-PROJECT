@@ -1,0 +1,75 @@
+.form-with-checkbox{
+    font-family:Calibri;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    position: relative;
+    min-height: 100dvh;
+    flex-wrap: wrap;
+}
+
+.form-with-checkbox .lesson-reg{
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 280px;
+    flex-wrap: wrap;
+}
+
+.form-with-checkbox .lesson-reg .range-type{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+input[placeholder="name..."],input[placeholder="number..."],input.range-val{
+    box-shadow: 0 0 5px deeppink, 0 0 8px pink;
+    color:deeppink;
+}
+
+input[type="range"]{
+    accent-color: deeppink;
+}
+
+.form-with-checkbox .lesson-reg .checkbox-wrapper{
+    color:deeppink;
+    font-size:22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-with-checkbox .lesson-reg .checkbox-wrapper .sub-checkbox-wrapper-1,
+.form-with-checkbox .lesson-reg .checkbox-wrapper .sub-checkbox-wrapper-2{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    flex-direction: column;
+}
+
+.saved-data{
+    display: inline-block;
+    font-size:20px;
+    width: 498px;
+    text-transform: capitalize;
+    padding: 20px;
+    height: 680px;
+    overflow-y :scroll;
+    color:deeppink;
+}
+
+.saved-data::-webkit-scrollbar{
+    display: none;
+}
+
+.saved-data .obj-data{
+    margin-bottom: 20px;
+    font-size:22px;
+}
+
+.show-btn,.hide-btn,.mobile-close,.mobile-sort,.mobile-clear{
+    display: none;
+}

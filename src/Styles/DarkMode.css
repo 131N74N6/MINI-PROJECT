@@ -1,0 +1,34 @@
+input#dark-toggle {
+    display: none;
+}
+
+label[for="dark-toggle"] {
+    position: relative;
+    width: 48px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 19px;
+    display: block;
+    background-color: white;
+    box-shadow: 0 0 2px inset rgb(119,119,119);
+    transition: 0.4s;
+}
+
+label[for="dark-toggle"] .point {
+    background-color: white;
+    box-shadow: 0 0 2px inset rgb(119,119,119);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+
+input#dark-toggle:checked + label[for="dark-toggle"] {
+    background-color: blue;
+    transition: 0.4s;
+}
+
+input#dark-toggle:checked + label[for="dark-toggle"] .point {
+    transform: translateX(28px);
+    transition: 0.4s;
+}

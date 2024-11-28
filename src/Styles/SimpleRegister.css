@@ -1,0 +1,209 @@
+.field-2 {
+    min-height: 100dvh;
+    position: relative;
+}
+
+.field-2 .control {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    align-items: center;
+}
+
+.field-2 .control button {
+    border: 0.5px solid darkblue;
+    background-color: white;
+    color: darkblue;
+    padding: 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 140px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.field-2 .set-image {
+    display: none;
+}
+
+.field-2 .file-preview {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.field-2 .file-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.field-2 .file-preview .symbol {
+    cursor: pointer;
+    font-family: Calibri;
+    border: 2px dotted darkblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register-form {
+    position: absolute;
+    top: -100%; /* Mulai dari luar layar */
+    left: 50%;
+    transform: translate(-50%, 0); /* Posisi awal sebelum muncul */
+    opacity: 0; /* Tidak terlihat */
+    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    gap: 14px;
+    width: 320px;
+    z-index: 100;
+}
+
+.register-form.active {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border: 2px solid darkblue;
+    padding: 14px;
+    background-color: white;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.register-form input {
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid darkblue;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Calibri;
+    color: darkblue;
+}
+
+.register-form input::placeholder {
+    color: darkblue;
+}
+
+.field-2 .submitted-data {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+.field-2 .submitted-data .show-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.field-2 .submitted-data .show-data .data-id {
+    border: 1px solid purple;
+    padding: 12px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    font-family: Calibri;
+    font-size: 18px;
+    box-shadow: 5px 5px purple;
+    width: 250px;
+    text-transform: capitalize;
+}
+
+.field-2 .img-container {
+    width: 120px;
+    height: 120px;
+}
+
+.field-2 .img-container img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.submit-cancel {
+    display: flex;
+    gap: 8px;
+}
+
+.submit-cancel button[type="submit"] {
+    background-color: mediumorchid;
+    border: none;
+    width: 140px;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.submit-cancel button[type="button"] {
+    background-color: darkviolet;
+    border: none;
+    width: 140px;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*dark mode*/
+.field-2.active {
+    background-color: black;
+    color: skyblue;
+}
+
+.field-2.active .control button {
+    border: 0.5px solid skyblue;
+    background-color: black;
+    color: skyblue;
+    padding: 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 140px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.field-2.active .submitted-data {
+    color: rgb(255, 175, 255);
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+.field-2.active .submitted-data .show-data .data-id {
+    border: 1px solid rgb(255, 175, 255);
+    padding: 12px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Calibri;
+    font-size: 18px;
+    box-shadow: 5px 5px rgb(255, 175, 255);
+    width: 250px;
+    text-transform: capitalize;
+}

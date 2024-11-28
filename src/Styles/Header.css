@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: mediumpurple;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Tahoma;
+}
+
+.header input[type="checkbox"] {
+    display: none;
+}
+
+.header .back {
+    font-size: 23px;
+}
+
+.header .dark-switch {
+    font-size: 24px;
+}
+
+.header .back, .header .dark-switch {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.header form {
+    display: flex;
+}

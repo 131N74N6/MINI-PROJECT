@@ -1,0 +1,21 @@
+.clock-bg-image{
+    background-image:url(https://wallpapercave.com/wp/wp11400918.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock-container{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock-wrap{
+    padding: 0 12px;
+    background-color: rgba(0,0,0,0.5);
+}
+.clock{
+    font-size:30px;
+    font-family:monospace;
+    color:white;
+}

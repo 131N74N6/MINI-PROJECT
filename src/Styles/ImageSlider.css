@@ -1,0 +1,129 @@
+.background-wrap {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.background-wrap .back-home {
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.background-wrap .background-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.background-wrap .background-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-wrap .background-content.active {
+    opacity: 1;
+}
+
+.background-wrap .background-content .group-of-text {
+    position: absolute;
+    z-index: 100;
+    top: 15%;
+    font-size: 20px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    left: 0;
+    width: 400px;
+    color: white;
+}
+
+.background-wrap .background-content.active .group-of-text {
+    display: block;
+    top: 15%;
+    left: 12%;
+}
+
+.next-prev {
+    position: absolute;
+    z-index: 100;
+    top: 60%;
+    left: 12%;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.next-prev button {
+    border: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.background-wrap-2 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.background-wrap-2 .background-content-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    left: 100%;
+}
+
+.background-wrap-2 .background-content-2.active {
+    left: 0;
+}
+
+.background-wrap-2 .background-content-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-wrap-2 .background-content-2 .group-of-text-2 {
+    position: absolute;
+    z-index: 100;
+    top: 15%;
+    font-size: 20px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    left: 12%;
+    width: 800px;
+    color: white;
+}
+
+.next-prev-2 {
+    position: absolute;
+    z-index: 100;
+    top: 170%;
+    left: 12%;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.next-prev-2 button {
+    border: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
