@@ -7,11 +7,19 @@
 }
 
 .project .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3) - 16px;
     gap: 1rem;
-    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.wrap .dragging {
+    cursor: grab;
+    user-select: none;
 }
 
 .project .wrap .project-card {

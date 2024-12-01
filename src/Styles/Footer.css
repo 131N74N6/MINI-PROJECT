@@ -4,8 +4,6 @@
     font-size: 20px;
 }
 
-/*dark mode*/
-.footer.active .footer-content .year {
-    background-color: black;
+body[is-dark="yes"] .footer .footer-content .year {
     color: aqua;
 }

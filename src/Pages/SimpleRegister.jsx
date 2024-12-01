@@ -6,9 +6,8 @@ import Footer from "../Components/Footer";
 import "../Styles/SimpleRegister.css";
 
 const defaultValue = {
-    db: [], name: "", age: "", gender: "", address: "",
-    image: "", profile: "", isModalOpen: false, isUpdateOpen: false,
-    fileName: "", totalData: 0
+    db: [], name: "", age: "", gender: "", address: "", image: "", profile: "", isModalOpen: false, 
+    isUpdateOpen: false, fileName: "", totalData: 0
 }
 
 // Handler

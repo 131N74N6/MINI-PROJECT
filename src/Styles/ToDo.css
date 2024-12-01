@@ -1,0 +1,281 @@
+.list-wrap {
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.list-wrap h2 {
+    font-family: Arial;
+    text-align: center;
+}
+
+.list-wrap #input-wrap {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-wrap input[type="text"] {
+    box-shadow: 0 0 5px darkorchid;
+    padding: 12px;
+    color: darkorchid;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.list-wrap .add-btn, .list-wrap .cancel-btn {
+    cursor: pointer;
+    background-color: darkorchid;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 80px;
+    font-family: Calibri;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.list-wrap #edit-btn {
+    cursor: pointer;
+    background-color: darkorchid;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    font-family: Calibri;
+    font-size: 1rem;
+}
+
+.list-wrap .data-length {
+    padding: 0 0 0.8rem 0;
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+.added-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-wrap .list {
+    box-shadow: 0 0 5px darkorchid;
+    gap: 18px;
+    padding: 18px;
+    border-radius: 6px;
+    font-family: Calibri;
+    font-size: 22px;
+    color: darkorchid;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.list-wrap .control-wrap {
+    display: flex;
+    margin-left: auto;
+    gap: 0.75rem;
+}
+
+.update-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-wrap #moveup,
+#movedwn {
+    background-color: midnightblue;
+    border: none;
+    padding: 8px;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.list-wrap #editlist {
+    background-color: deepskyblue;
+    border: none;
+    padding: 8px;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.list-wrap #erase {
+    background-color: black;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: 21px;
+    border-radius: 6px;
+}
+
+.list-wrap .sorting {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-wrap #asc-1,
+.list-wrap #dsc-1 {
+    cursor: pointer;
+    width: 80px;
+    background-color: mediumorchid;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+.list-wrap #open {
+    cursor: pointer;
+    width: 80px;
+    background-color: violet;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    width: 120px;
+    font-size: 18px;
+}
+
+.list-wrap #empty {
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+.empty-warn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    font-family: Arial;
+    font-size: 1.6rem;
+}
+
+/*dark theme*/
+.list-wrap.active {
+    background-color: black;
+    color: darkorange;
+}
+
+.list-wrap.active #input-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-wrap.active input[type="text"], 
+.list-wrap.active .add-btn, 
+.list-wrap.active .cancel-btn {
+    box-shadow: 0 0 4px orange, 0 0 6px darkorange;
+    padding: 12px;
+    color: orange;
+    background-color: black;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.list-wrap.active input[type="text"]::placeholder {
+    color: orange;
+}
+
+.list-wrap.active .add-btn {
+    background-color: black;
+    color: orange;
+}
+
+.list-wrap.active .data-length {
+    padding: 0 0 0.8rem 0;
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+.list-wrap.active .sorting {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-wrap.active .sorting #open,
+.list-wrap.active .sorting #empty,
+.list-wrap.active .sorting #asc-1,
+.list-wrap.active .sorting #dsc-1 {
+    cursor: pointer;
+    box-shadow: 0 0 4px orange, 0 0 6px darkorange;
+    border-radius: 10px;
+    background-color: black;
+    color: orange;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+.list-wrap.active .list {
+    box-shadow: 0 0 4px orange, 0 0 6px darkorange;
+    background-color: black;
+    gap: 18px;
+    padding: 18px;
+    border-radius: 6px;
+    font-family: Calibri;
+    font-size: 22px;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.list-wrap.active .control-wrap #moveup,
+.list-wrap.active .control-wrap #movedwn,
+.list-wrap.active .control-wrap #editlist,
+.list-wrap.active .control-wrap #erase {
+    background-color: black;
+    border:1.2px solid orange;
+}
+
+.list-wrap.active #edit-btn, .cncl-b {
+    background-color: black;
+    color: orange;
+    box-shadow: 0 0 4px orange, 0 0 6px darkorange;
+}
+
+.list-wrap.active .list-text {
+    text-decoration: none;
+}
+
+.list-wrap.active .list-text.done {
+    text-decoration: line-through;
+    color: orange;
+}

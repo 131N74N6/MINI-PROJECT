@@ -1,6 +1,7 @@
 body[is-dark="no"] {
     background-color: white;
     transition: 0.4s;
+    position: relative;
 }
 
 body[is-dark="yes"] {

@@ -13,6 +13,7 @@ const Schedule = lazy(() => import("./Pages/Schedule"));
 const Registration = lazy(() => import("./Pages/Registration"));
 const Cart = lazy(() => import("./Pages/Cart"));
 const Quiz = lazy(() => import("./Pages/Quiz"));
+const SimpleTodo = lazy(() => import("./Pages/ToDo"));
 
 export default function App() {
     return (
@@ -30,6 +31,7 @@ export default function App() {
                         <Route path="/registration" element={<Registration/>}/>
                         <Route path="/cart" element={<Cart/>}/>
                         <Route path="/quiz" element={<Quiz/>}/>
+                        <Route path="/simple-todo-list" element={<SimpleTodo/>}/>
                     </Routes>
                 </Router>
             </Suspense>
